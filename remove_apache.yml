@@ -8,4 +8,9 @@
       name: httpd
       state: absent
 
+  - name: Remove firewalld package
+    yum:
+      name: firewalld
+      state: absent
+
 ...
