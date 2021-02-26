@@ -1,0 +1,11 @@
+---
+
+- hosts: ansiblelab7
+  become: yes
+  tasks:
+  - name: update sudo package
+    yum:
+      name: sudo
+      state: latest
+
+...
